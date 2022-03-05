@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2in;
+    width: 100%;
+}
+
+
+.calculator{
+    background-color: rgb(168, 168, 168);
+    width: 5in;
+    height: 5in;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+
+.calculator > div{
+    background-color: rgb(154, 212, 61);
+    border-style: solid;
+    border-color: rgb(118, 170, 35);
+}
+
+
+#screen{
+    grid-column: 1/5;
+}
+
+.button{
+    display: block;
+    margin: 5px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border-style: none;
+    background-color: rgb(154, 212, 61);
+}
+
+.button:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
